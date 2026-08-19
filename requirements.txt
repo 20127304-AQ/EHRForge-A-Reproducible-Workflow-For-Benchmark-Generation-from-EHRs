@@ -1,0 +1,7 @@
+pandas
+openpyxl
+matplotlib
+nltk
+wordcloud
+tqdm
+openai
