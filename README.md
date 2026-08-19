@@ -1,4 +1,4 @@
-**EHRForge: A reproducible workflow for constructing evidence-grounded synthetic temporal question-answering benchmarks from longitudinal clinical notes.**
+# EHRForge: A reproducible workflow for constructing evidence-grounded synthetic temporal question-answering benchmarks from longitudinal clinical notes
 
 EHRForge is a modular and privacy-conscious research workflow for building temporal question-answering (QA) benchmarks from longitudinal electronic health record (EHR) notes.
 
