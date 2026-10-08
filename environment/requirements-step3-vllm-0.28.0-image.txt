@@ -1,0 +1,19 @@
+# Step 3 generative readers (Qwen2.5-7B/32B): vLLM 0.28.0 OFFICIAL image, not a pip environment.
+# Image: vllm/vllm-openai:v0.28.0@sha256:2286e8533ca8b6bc777594bae30524f1426ba46ca21797524e06df6a94b06635 (amd64)
+#   + pip install pyarrow==25.0.1 pandas==3.0.6 pyyaml==6.0.3 requests (I/O only); env DISABLE_SAFETENSORS_CONVERSION=1.
+# Versions below: shared/readers_v1.3/run_meta/qwen2_5_7b.json 'versions' (read inside the running image).
+# GPU: NVIDIA H100 80GB HBM3, 580.95.05, 81559 MiB; CUDA 13.0.2.
+# python==3.12.3
+accelerate==1.14.0
+flashinfer-python==0.6.16.post3
+huggingface_hub==1.28.0
+numpy==2.2.6
+pandas==3.0.6
+pyarrow==25.0.1
+pyyaml==6.0.3
+safetensors==0.8.0
+tokenizers==0.22.2
+torch==2.13.0+cu130
+transformers==5.15.1
+triton==3.7.1
+vllm==0.28.0

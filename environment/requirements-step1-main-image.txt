@@ -1,0 +1,12 @@
+# Step 1 main Modal image (BM25, MedCPT, ranking/hybrid/validation).
+# Source: protocol_v1.4.yaml software_versions.modal_images_v1_1.main_image (recorded inside the image).
+# Built as debian_slim py3.11 + uv pip install torch torchvision numpy transformers datasets tiktoken tqdm matplotlib pandas sentence-transformers rank_bm25 pyyaml pyarrow requests (unpinned at build; pins = what resolved).
+# python==3.11.12
+datasets==4.1.1
+numpy==2.3.3
+pyarrow==21.0.0
+rank-bm25==0.2.2
+sentence-transformers==6.1.0
+tokenizers==0.23.2
+torch==2.8.0
+transformers==5.18.0

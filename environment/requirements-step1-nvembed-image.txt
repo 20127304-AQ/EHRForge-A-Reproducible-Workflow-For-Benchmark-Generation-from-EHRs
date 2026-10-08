@@ -1,0 +1,12 @@
+# Step 1 NV-Embed-v2 OWN Modal image (transformers 4.42.4, per protocol v1.1 change 3).
+# Source: protocol_v1.4.yaml retrievers.nvembed_v2.image_versions.
+# python==3.11.12
+accelerate==1.15.0
+datasets==2.20.0
+einops==0.8.2
+numpy==1.26.4
+pyarrow==16.1.0
+sentence-transformers==2.7.0
+tokenizers==0.19.1
+torch==2.2.0
+transformers==4.42.4

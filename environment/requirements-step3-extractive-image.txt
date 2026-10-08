@@ -1,0 +1,15 @@
+# Step 3 extractive readers + context building image (main readers image).
+# Source: shared/readers_v1.3/run_meta/roberta_base_squad2.json 'versions' (identical image for all extractive readers).
+# GPU: NVIDIA A100-SXM4-80GB, 580.95.05, 81920 MiB; torch CUDA 12.8.
+# python==3.11.12
+datasets==4.1.1
+huggingface_hub==0.35.3
+numpy==2.3.3
+pandas==2.3.3
+pyarrow==21.0.0
+pyyaml==6.0.3
+safetensors==0.6.2
+tokenizers==0.22.1
+torch==2.8.0
+transformers==4.56.2
+triton==3.4.0

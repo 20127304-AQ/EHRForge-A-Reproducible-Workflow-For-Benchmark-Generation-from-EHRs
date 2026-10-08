@@ -1,0 +1,10 @@
+# Step 4 BERTScore (RoBERTa-large L17, Bio_ClinicalBERT L9; fp32, idf=False, no rescale).
+# Source: shared/scoring_v1.4/run_manifest.json bertscore.roberta_large.versions.
+# python==3.11.12
+bert-score==0.3.13
+gpu_count==1
+numpy==2.4.6
+pandas==3.0.6
+tokenizers==0.22.2
+torch==2.8.0
+transformers==4.56.2

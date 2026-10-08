@@ -1,0 +1,6 @@
+# Step 4 Prometheus-2 judge: same vLLM 0.28.0 image as Step 3 + `pip install --no-deps prometheus-eval==0.1.20 fschat==0.2.36`.
+# Source: shared/scoring_v1.4/run_manifest.json judge.vllm_image = vllm/vllm-openai:v0.28.0@sha256:2286e8533ca8b6bc777594bae30524f1426ba46ca21797524e06df6a94b06635 (+ --no-deps prometheus-eval==0.1.20 fschat==0.2.36)
+# Judge model: prometheus-eval/prometheus-8x7b-v2.0 @ 2db013b60e3e91f7a06113e436410899768e8228; sampling: {"greedy": true, "temperature": 0.0, "top_p": 1.0, "max_tokens": 1024, "seed": 42, "n": 1, "repetition_penalty": "1.0 (vLLM default; not set)", "note": "GREEDY ...
+# Engine runtime versions: see docs/run_manifests/04_scoring/run_manifest.json and docs/step_reports/step4_report.md.
+prometheus-eval==0.1.20
+fschat==0.2.36

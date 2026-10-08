@@ -1,0 +1,29 @@
+# EHRForge v1.4 release configuration (single source of paths and account-specific names).
+# Flat "KEY: value" lines only (parsed by release_config.py without PyYAML, so it also works in minimal images).
+# Relative paths are resolved against the directory of THIS file (evaluation/).
+# Every key can be overridden by an environment variable EHRFORGE_<KEY> (e.g. EHRFORGE_OUT_DIR=/scratch/out).
+
+# Workspace = directory that holds the restricted inputs in the ORIGINAL project layout:
+#   <WORKSPACE_DIR>/data/dataset.csv, <WORKSPACE_DIR>/data/corpus.json,
+#   <WORKSPACE_DIR>/shared/<step dirs>/...   (see docs/restricted_manifest.csv for the exact relative paths)
+# Run `python evaluation/setup_workspace.py` once to populate <WORKSPACE_DIR>/shared/canonical/ from this release.
+WORKSPACE_DIR: ../workspace
+
+# Must equal <WORKSPACE_DIR>/data (ehr_data.py reads <root>/data/dataset.csv and <root>/data/corpus.json).
+DATA_DIR: ../workspace/data
+
+# Every step writes to <OUT_DIR>/<step>/results and <OUT_DIR>/<step>/logs
+# (steps: 01_retrieval, 02_retrieval_metrics, 03_readers, 04_scoring, 05_stratified).
+OUT_DIR: ../out
+
+# Modal object names (account-specific in the original runs; choose your own).
+HF_SECRET: huggingface-secret
+HF_CACHE_VOLUME: huggingface-cache
+STEP1_VOLUME: ehrforge-step1-v11
+STEP1_APP_RETRIEVAL: ehrforge-v11-retrieval
+STEP1_APP_SMOKE: ehrforge-v11-smoke
+STEP3_VOLUME: ehrforge-step3-v13
+STEP3_HF_VOLUME: ehrforge-step3-hfcache
+STEP4_VOLUME: ehrforge-step4-v14
+STEP4_HF_VOLUME: ehrforge-step4-hf
+STEP4_APP: ehrforge-step4-v14

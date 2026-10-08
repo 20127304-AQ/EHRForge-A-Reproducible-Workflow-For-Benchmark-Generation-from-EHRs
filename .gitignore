@@ -1,0 +1,44 @@
+# --- secrets / credentials ---
+.env
+.env.*
+*.env
+.modal.toml
+modal.toml
+**/modal_token*
+**/*token*.json
+*.pem
+*.key
+
+# --- restricted data and patient-level intermediates (never commit) ---
+data/
+workspace/
+out/
+contexts/
+predictions/
+rankings/
+pilot/
+judge_full/
+*.parquet
+*.jsonl
+corpus.json
+dataset.csv
+inter_df_personid.csv
+patient_sequences.jsonl
+judge_keys_1000.csv
+# spreadsheets may contain patient text (clinician sheets, evidence checks, QA exports)
+*.xlsx
+*.xls
+# dataset-generation outputs (upstream README defaults)
+outputs/
+analysis_outputs/
+
+# --- python / tooling ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+*.bak
